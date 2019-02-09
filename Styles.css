@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Raleway', serif;
+}
+
+/*
+ *  HEADER
+ */
+header {
+  height: 5vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+form {
+  margin-left: auto;
+}
+
+.Flex-Header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  background-color: #212121;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.Flex-Header a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+form input {
+  padding: 5px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #484848;
+  border-color: #484848;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Raleway', serif;
+  font-weight: 400;
+}
+
+input[type="submit"]:hover {
+  color: #338bd5;
+}
+
+.Logo {
+  font-weight: 900;
+  font-size: 25px;
+  color: #338bd5;
+}
+
+/*
+ *  SUB-HEADER
+ */
+.Sub-Header-Flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Sub-Header-Flex h1 {
+  font-weight: 900;
+  color: #338bd5;
+  font-size: 50px;
+  line-height: 0.5em;
+  padding-top: 200px;
+}
+
+.Sub-Header-Flex p {
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 27px;
+}
+
+.EnrollBtn {
+  border: 1px solid #338bd5;
+  border-radius: 10px;
+  background-color: #338bd5;
+  transition: all 0.2s;
+  padding: 7px 25px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: Black;
+  text-decoration: none;
+}
+
+.EnrollBtn:hover {
+  background-color: #71bbff;
+  border-color: #71bbff;
+}
+
+/*
+ * BACKING IMAGE FOR HEADER AND SUB-HEADER
+ */
+.Img-Back {
+  background-image: url('images/gym.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -50px;
+  height: 100vh;
+}
+
+/*
+ *  INFO BLOCKS
+ */
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.presentation-block {
+  width: 48%;
+  height: 170px;
+  margin: 10px;
+  background-color: #eeee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Block-Flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 25px;
+  color: black;
+  width: 100%;
+}
+
+.vectors {
+  width: 85px;
+  margin: 10px;
+}
+
+.InfoTxt {
+  font-size: 20px;
+}
+
+/*
+ *  FOOTER
+ */
+
+footer {
+  display: flex;
+  text-align: center;
+  font-weight: 400;
+  padding: 20px;
+  background-color: Black;
+  color: white;
+}
+
+.Right {
+  margin-left: auto;
+}
+
+/*
+ * PREVENT FOUC
+ */
+html {
+  visibility: visible;
+  opacity: 1;
+}
