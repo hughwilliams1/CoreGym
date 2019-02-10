@@ -183,11 +183,3 @@ footer {
 .Right {
   margin-left: auto;
 }
-
-/*
- * PREVENT FOUC
- */
-html {
-  visibility: visible;
-  opacity: 1;
-}
