@@ -158,18 +158,9 @@ form {
   height: 100vh;
 }
 
-@media screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   .Img-Back {
-    height: 70vh;
-  }
-
-  .Sub-Header-Flex h1 {
-    font-size: 25px;
-  }
-
-  .Sub-Header-Flex p {
-    padding-bottom: 10px;
-    font-size: 15px;
+    height: auto + 10px;
   }
 }
 
