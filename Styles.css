@@ -16,12 +16,10 @@ header {
   top: 0;
 }
 
-form {
-  margin-left: auto;
-}
-
 .Flex-Header {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   padding: 15px;
   align-items: center;
   background-color: #212121;
@@ -59,6 +57,32 @@ input[type="submit"]:hover {
   color: #338bd5;
 }
 
+@media screen and (max-width: 581px) {
+  .Flex-Header {
+    flex-direction: column;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+
+  input[type="password"] {
+    margin-top: 10px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /*
  *  SUB-HEADER
  */
@@ -67,17 +91,21 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 93vh;
 }
 
 .Sub-Header-Flex h1 {
+  text-align: center;
   font-weight: 900;
   color: #338bd5;
   font-size: 50px;
-  line-height: 0.5em;
+  line-height: 1em;
   padding-top: 200px;
 }
 
 .Sub-Header-Flex p {
+  text-align: center;
   font-weight: 400;
   font-size: 25px;
   padding-bottom: 27px;
@@ -101,6 +129,23 @@ input[type="submit"]:hover {
   border-color: #71bbff;
 }
 
+@media screen and (max-height: 636px) and (max-width: 670px) {
+  .Sub-Header-Flex h1 {
+    font-size: 25px;
+  }
+
+  .Sub-Header-Flex p {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 498px) and (min-width: 670px) {
+  .Sub-Header-Flex h1 {
+    padding-top: 100px;
+  }
+}
+
 /*
  * BACKING IMAGE FOR HEADER AND SUB-HEADER
  */
@@ -109,8 +154,23 @@ input[type="submit"]:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -50px;
+  margin-bottom: -7vh;
   height: 100vh;
+}
+
+@media screen and (orientation: portrait) {
+  .Img-Back {
+    height: 70vh;
+  }
+
+  .Sub-Header-Flex h1 {
+    font-size: 25px;
+  }
+
+  .Sub-Header-Flex p {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
 }
 
 /*
@@ -120,21 +180,16 @@ input[type="submit"]:hover {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  justify-content: space-around;
 }
 
 .presentation-block {
-  width: 48%;
-  height: 170px;
   margin: 10px;
   background-color: #eeee;
   border-radius: 5px;
   text-align: center;
-}
-
-.Block-Flex {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  flex-grow: 1;
+  max-width: 48%;
 }
 
 .flex-row {
@@ -165,6 +220,18 @@ input[type="submit"]:hover {
 
 .InfoTxt {
   font-size: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .presentation-block {
+    max-width: 90%;
+  }
 }
 
 /*
