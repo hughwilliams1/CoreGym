@@ -150,7 +150,7 @@ form {
  * BACKING IMAGE FOR HEADER AND SUB-HEADER
  */
 .Img-Back {
-  background-image: url('images/gym.jpg');
+  background-image: url('../images/gym.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
