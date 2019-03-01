@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/signupStyle.css">
+    <script type="text/javascript" src="scripts/signup.js"></script>
     <title>Sign Up</title>
   </head>
   <body>
@@ -20,9 +21,9 @@
       <h1>Signup with email</h1>
       <form class="signupform">
         <input type="email" name="email" placeholder="Email" pattern=".*\.edu|.*\.ac\.uk" required/>
-        <input type="password" name="password" placeholder="Password" required/>
-        <input type="password" name="password" placeholder="Re-Input Password" required/>
-        <input type="submit" value="Signup"/>
+        <input type="password" name="password" placeholder="Password" id="p1" required/>
+        <input type="password" name="password" placeholder="Re-Input Password" id="p2" required/>
+        <input type="submit" value="Signup" onclick="checkPass();"/>
       </form>
     </div>
   </body>
