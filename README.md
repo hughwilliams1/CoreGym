@@ -1,5 +1,5 @@
 # CoreGym
 
-A website for a Gym
+A website for a fake Gym
 
-Initially a landing page
+Website link: https://hughwilliams1.github.io/CoreGym/
