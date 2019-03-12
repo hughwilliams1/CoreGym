@@ -9,6 +9,9 @@ body {
   background-size: cover;
 }
 
+/*
+ *  HEADER
+ */
 .navbar-brand {
   width: 100px;
   color: #338bd5;
@@ -40,6 +43,9 @@ body {
   text-align: center;
 }
 
+/*
+ *  SIGN UP FORM
+ */
 .form {
   margin-top: 60px;
 }
@@ -64,6 +70,9 @@ body {
   }
 }
 
+/*
+ *  FOOTER
+ */
 footer {
   display: flex;
   text-align: center;
