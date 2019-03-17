@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CoreGym</title>
+
+    <!-- Importing Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Importing data -->
+    <script src="scripts/data.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- Importing stylesheet -->
+    <link rel="stylesheet" href="styles/dashboardStyle.css"/>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcontents">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand logo" href="./Index.html">CoreGym</a>
+
+        </div>
+
+        <div id="navcontents" class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+
+          <ul class="nav nav-sidebar">
+
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Running</a></li>
+            <li><a href="#">Weights</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">Heart</a></li>
+
+          </ul>
+
+      </div>
+
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+      <h1 class="page-header">Overview Stats</h1>
+
+      <div class="row charts">
+
+        <div class="col-xs-12 col-md-6 chart">
+
+          <h4>Run Time By Date</h4>
+          <div id="runTimeByDate"></div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 chart">
+
+          <h4>Run time by BMI</h4>
+          <div id="runTimeByBMI"></div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 chart">
+
+          <h4>Runs per month</h4>
+          <div id="runsPerMonth"></div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 chart">
+
+          <h4>Injury probability from run amount within a month</h4>
+          <div id="injuryProbFromAmountRun"></div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- Importing page scripts -->
+    <script src="lib/dashboard.js"></script>
+    <script src="scripts/dashboard.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

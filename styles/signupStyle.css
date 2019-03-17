@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', serif;
+  background-image: url('../images/gym_small.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+ *  HEADER
+ */
+.navbar-brand {
+  width: 100px;
+  color: #338bd5;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.navbar {
+  background-color: #212121;
+  color: #338bd5;
+  opacity: 0.8;
+  padding: 15px 15px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #338bd5;
+}
+
+.nav input {
+  padding: 4px 10px;
+  margin: 5px;
+  background-color: #484848;
+  border-color: #484848;
+  border-radius: 15px;
+  color: white;
+}
+
+.navbar-collapse li {
+  text-align: center;
+}
+
+/*
+ *  SIGN UP FORM
+ */
+.form {
+  margin-top: 60px;
+}
+
+.form h1 {
+  padding-bottom: 10px;
+}
+
+.form label {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+  .form {
+    border-color: lightgrey;
+    background-color: white;
+    background-blend-mode: lighten;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10px;
+    border-spacing: 10px;
+  }
+}
+
+/*
+ *  FOOTER
+ */
+footer {
+  display: flex;
+  text-align: center;
+  margin-top: 75px;
+  padding: 20px;
+  background-color: Black;
+  color: white;
+  box-shadow: 0 50vh 0 50vh #000;
+  font-size: 1.2em;
+}
+
+.Right {
+  margin-left: auto;
+}

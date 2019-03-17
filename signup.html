@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CoreGym</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/signupStyle.css">
+  </head>
+  <body>
+
+    <!--  Nav bar streches whole top, hamburger menu when width is too low
+          where the elements in it are from the navcontents target -->
+
+    <nav class="navbar navbar-static-top container-fluid">
+
+      <div class="continer">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcontents">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="./Index.html">CoreGym</a>
+
+        </div>
+
+        <div id="navcontents" class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><input type="email" name="email" placeholder="Email" pattern=".*\.edu|.*\.ac\.uk" required/></li>
+            <li><input type="password" name="password" placeholder="Password" required/></li>
+            <li><input type="submit" value="Sign In" onclick="window.location='./dashboard.html';"/></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!--  Take the whole width when the size is xs and sm
+          Only strech for 8 columns when md and higher -->
+
+    <div class="container col-xs-12 col-md-8 col-md-offset-2 form">
+
+      <form>
+
+        <h1 class="col-xs-8 col-xs-offset-4 col-md-offset-5">Sign Up</h1>
+
+        <!-- Row containing two inputs of width 6 each -->
+
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+
+              <label for="fn">First Name</label>
+              <input type="text" class="form-control" placeholder="First name" id="fn" required>
+
+            </div>
+
+            <div class="form-group col-md-6">
+
+              <label for="ln">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last name" id="ln" required>
+
+            </div>
+
+        </div>
+
+        <!-- Each of the rows spanning the whole form -->
+
+        <div class="form-group col-xs-12">
+
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" pattern=".*\.edu|.*\.ac\.uk" required />
+
+        </div>
+
+        <div class="form-group col-xs-12">
+
+          <label for="p1">Password</label>
+          <input type="password" class="form-control" id="p1" placeholder="Password" required />
+
+        </div>
+
+        <div class="form-group col-xs-12">
+
+          <label for="p2">Re-input Password</label>
+          <input type="password" class="form-control" id="p2" placeholder="Password" required />
+
+        </div>
+
+        <div class="form-group col-xs-12">
+          <button type="submit" class="btn btn-primary pull-right" onclick="checkPass();">Sign up</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <footer class="container-fluid col-xs-12 footer">
+
+      <p>Questions? Call 0161 448 1614</p>
+      <p class="Right">©2019 CoreGymLtd</p>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="scripts/signup.js"></script>
+  </body>
+</html>

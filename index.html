@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="/CoreGym/styles/indexStyle.css">
+    <style>html{visibility: hidden;opacity:0;}</style>
+    <link rel="stylesheet" href="styles/indexStyle.css">
     <meta charset="utf-8">
     <title>CoreGym</title>
     <link rel="icon" href="images/icon.png" />
@@ -11,18 +12,18 @@
     <div class="Img-Back">
       <header>
         <div class="Flex-Header">
-          <a href="#", class="Logo">CoreGym</a>
+          <a href="./Index.html", class="Logo">CoreGym</a>
           <form>
             <input type="email" name="email" placeholder="Email" pattern=".*\.edu|.*\.ac\.uk" required/>
             <input type="password" name="password" placeholder="Password" required/>
-            <input type="submit" value="Sign In"/>
+            <input type="submit" value="Sign In" onclick="window.location='./dashboard.html';"/>
             </form>
           </div>
         </header>
         <div class="Sub-Header-Flex">
           <h1>Click Today, Run Tomorrow</h1>
           <p>Click to crunch in 10 minutes or less</p>
-          <a href="#" class="EnrollBtn">FREE WEEK ACCESS</a>
+          <a href="./signup.html" target="_self" class="EnrollBtn">FREE WEEK ACCESS</a>
         </div>
       </div>
     <div class="FlexContainer">
